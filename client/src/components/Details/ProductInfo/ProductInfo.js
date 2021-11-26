@@ -78,7 +78,13 @@ function ProductInfo({ params }) {
           )}
         </span>
       </Row>
-      <button className="snipcart-add-item" data-item-id={params._id}>
+      <button className="snipcart-add-item" 
+      data-item-id={params._id}
+      data-item-image={params.image}
+      data-item-name={params.title}
+      data-item-url="/"
+      data-item-description={params.description}
+      data-item-price={params.price}>
             Add to Cart
       </button>
       <div id="detailsCardText" className="col-lg-12">
