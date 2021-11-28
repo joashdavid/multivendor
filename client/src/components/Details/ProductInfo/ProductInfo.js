@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import { BsHeart, BsHeartFill } from "react-icons/bs";
 import { wishProduct } from "../../../services/productData";
-import Helmet from "react-helmet"
+import ReactPlayer from 'react-player';
 
 function ProductInfo({ params }) {
   const [wish, setWish] = useState(false);
@@ -40,7 +40,7 @@ function ProductInfo({ params }) {
 
   return (
     <>
-            {/* <Helmet>
+      {/* <Helmet>
                 <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
                 <div id="snipcart" data-config-modal-style="side" data-api-key="ZTI5ZGYwMmYtMTQxNS00ZmYzLTk5ODEtYjYxZjU4YzRhZDE4NjM3NzM0NTk5MDA1ODIzMjkz" hidden></div>
                 <link rel="preconnect" href="https://app.snipcart.com" />
@@ -78,31 +78,19 @@ function ProductInfo({ params }) {
           )}
         </span>
       </Row>
-      <button className="snipcart-add-item" 
-      data-item-id={params._id}
-      data-item-image={params.image}
-      data-item-name={params.title}
-      data-item-url="/"
-      data-item-description={params.description}
-      data-item-price={params.price}>
-            Add to Cart
+      <button
+        className="snipcart-add-item"
+        data-item-id={params._id}
+        data-item-image={params.image}
+        data-item-name={params.title}
+        data-item-url="/"
+        data-item-description={params.description}
+        data-item-price={params.price}
+      >
+        Add to Cart
       </button>
       <div id="detailsCardText" className="col-lg-12">
-        <Tabs defaultActiveKey="details" transition={false}>
-          <Tab eventKey="details" title="Details" id="tab-details">
-            {params.description}
-            <hr />
-            <p id="details-footer" className="text-muted">
-              Product listed at {params.addedAt}
-            </p>
-          </Tab>
-          {/* <Tab eventKey="aboutSeller" title="About seller">
-                        <p>Name: {params.name || "Not specified"}</p>
-                        <p>Email: {params.email}</p>
-                        <p>Telephone: {params.phone}</p>
-                        <p>City: {params.city}</p>
-                    </Tab> */}
-        </Tabs>
+      <ReactPlayer url={params.description} />
       </div>
     </>
   );

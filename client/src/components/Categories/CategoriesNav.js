@@ -15,25 +15,25 @@ function CategoriesNav() {
                 <Button variant="dark" id="all"><TiSortAlphabetically />All</Button>{' '}
             </Link>
             <Link to="/categories/properties">
-                <Button variant="dark" id="properties"><BsHouseDoorFill />Properties</Button>{' '}
+                <Button variant="dark" id="properties"><BsHouseDoorFill />EDM</Button>{' '}
             </Link>
             <Link to="/categories/auto">
-                <Button variant="dark" id="auto"><AiFillCar />Auto</Button>{' '}
+                <Button variant="dark" id="auto"><AiFillCar />TRAP</Button>{' '}
             </Link>
             <Link to="/categories/home">
-                <Button variant="dark" id="home"><BsFillHouseFill />Home</Button>{' '}
+                <Button variant="dark" id="home"><BsFillHouseFill />HOUSE</Button>{' '}
             </Link>
             <Link to="/categories/electronics">
-                <Button variant="dark" id="electronics"><MdPhoneAndroid />Electronics</Button>{' '}
+                <Button variant="dark" id="electronics"><MdPhoneAndroid />POP</Button>{' '}
             </Link>
             <Link to="/categories/clothes">
-                <Button variant="dark" id="clothes"><GiClothes />Clothes</Button>{' '}
+                <Button variant="dark" id="clothes"><GiClothes />ROCK</Button>{' '}
             </Link>
             <Link to="/categories/toys">
-                <Button variant="dark" id="toys"><BsFillPuzzleFill />Toys</Button>{' '}
+                <Button variant="dark" id="toys"><BsFillPuzzleFill />BLUES</Button>{' '}
             </Link>
             <Link to="/categories/garden">
-                <Button variant="dark" id="garden"><GiFlowerPot />Garden</Button>{' '}
+                <Button variant="dark" id="garden"><GiFlowerPot />CARNATIC</Button>{' '}
             </Link>
         </div>
     )

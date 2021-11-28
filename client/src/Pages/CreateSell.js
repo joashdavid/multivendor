@@ -79,8 +79,8 @@ class AddProduct extends Component {
                         </Form.Row>
 
                         <Form.Group controlId="formGridDescription.ControlTextarea1">
-                            <Form.Label>Description</Form.Label>
-                            <Form.Control as="textarea" rows={3} name="description" required onChange={this.onChangeHandler} />
+                            <Form.Label>Add Your SoundCloud Link</Form.Label>
+                            <Form.Control type="text" name="description" required onChange={this.onChangeHandler} />
                         </Form.Group>
 
                         <Form.Row>
@@ -93,18 +93,18 @@ class AddProduct extends Component {
                                 <Form.Label>Category</Form.Label>
                                 <Form.Control as="select" defaultValue="Choose..." name="category" required onChange={this.onChangeHandler}>
                                     <option>Choose...</option>
-                                    <option>properties</option>
-                                    <option>auto</option>
-                                    <option>electronics</option>
-                                    <option>clothes</option>
-                                    <option>toys</option>
-                                    <option>home</option>
-                                    <option>garden</option>
+                                    <option>EDM</option>
+                                    <option>TRAP</option>
+                                    <option>HOUSE</option>
+                                    <option>POP</option>
+                                    <option>ROCK</option>
+                                    <option>BLUES</option>
+                                    <option>CARNATIC</option>
                                 </Form.Control>
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridImage" >
-                                <Form.Label>Image</Form.Label>
+                                <Form.Label>Album Art</Form.Label>
                                 <Form.Control name="image" type="file" required onChange={this.onChangeHandler} />
                             </Form.Group>
                         </Form.Row>
